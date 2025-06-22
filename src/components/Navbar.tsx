@@ -18,7 +18,7 @@ function Navbar() {
     return (
         <>
             <div className="h-screen w-screen bg-black/56 hidden"/>
-            <header className="h-24 px-8 bg-header-green rounded-b-4xl flex justify-between relativea z-0 overflow-hidden">
+            <header className="h-24 px-14 w-screen  bg-header-green rounded-b-4xl flex justify-between relativea z-0 overflow-hidden">
                 <div className="">
                     <img
                         className="h-full"
@@ -36,14 +36,14 @@ function Navbar() {
                 )}
 
                 <nav 
-                className={`${!menu ? 'translate-x-full md:translate-0' : 'translate-x-0'} text-xl transition-transform bg-menu fixed right-0 h-screen px-14 flex flex-col justify-center overflow-hidden z-20 
+                className={`${!menu ? 'translate-x-full md:translate-0' : 'translate-x-0'} px-14 md:px-0 text-xl transition-transform bg-menu fixed right-0 h-screen flex flex-col justify-center overflow-hidden z-20 
                             md:relative md:bg-transparent md:flex-row md:h-full md:overflow-auto `}>
 
                     <button type="button" className="absolute top-8 right-13 text-3xl md:hidden" onClick={() => setMenu(!menu)}>
                         <FontAwesomeIcon icon={faXmark}/>
                     </button>
 
-                    <ul className="flex flex-col gap-8 md:flex-row md:items-center">
+                    <ul className="flex flex-col gap-16 md:flex-row md:items-center">
                         <li>
                             <a href="#">Inicio</a>
                         </li>
